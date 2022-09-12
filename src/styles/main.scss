@@ -1,0 +1,511 @@
+$forestgreen: #567D04;
+$outdoorsgreen: #7E9757;
+$info: $forestgreen;
+$warning: $outdoorsgreen;
+$footer-padding: 2rem 0 2rem 0;
+
+@import '~bulma/bulma.sass';
+@import 'bulma';
+@import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+@font-face {
+  font-family: rift-soft;
+  src: url("/assets/fonts/rift/Rift Soft Light.otf") format("opentype"),
+}
+@font-face {
+  font-family: effra;
+  src: url("/assets/fonts/effra/Effra Regular.ttf") format("truetype"),
+    
+}
+// General 
+html,
+body, button {
+font-family: 'Jost', sans-serif;
+}
+
+
+body {
+  display: flex;
+  min-height: 82vh;
+  flex-direction: column;
+}
+
+
+#carousel {
+  position: absolute;
+ opacity: .7;
+width: 100vw;
+    z-index: -1;
+}
+
+#carousel img {
+background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -140px
+}
+@media only screen and (min-width: 1301px) {
+.content {
+  padding: 2% 10% 2% 10%;
+
+}}
+
+@media only screen and (max-width: 1300px) {
+  .content {
+    padding: 2% 2% 2% 2%;
+
+  }
+}
+
+.back-button {
+  position: absolute;
+  font-size: 22px;
+  padding-left: 6px;
+  padding-top: 3px;
+  border: none;
+  background: none;
+}
+
+.back-button :hover {
+  cursor: pointer;
+  transition: all 0.1s;
+    color: grey;
+}
+
+.back-button-subtitle {
+  color: grey;
+    font-size:small;
+    margin-top: -5px;
+}
+
+#button:hover {
+  transition: all 0.1s;
+  color: black;
+}
+
+#fontawesome-styling {
+  color: black
+}
+
+.video-responsive {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+// 
+
+// Navbar
+.navbar {
+  height: 8vh;
+  background-color: $outdoorsgreen;
+  color: white 
+}
+
+.navbar-menu {
+  background-color: $outdoorsgreen;
+  color: blue;
+}
+
+.navbar-menu :hover {
+  
+  text-decoration: none;
+}
+
+.navbar-brand:focus {
+  background-color: transparent;;
+}
+
+.navbar-brand:active {
+  background-color: transparent;;
+}
+
+#navbar-item:hover {
+  transition: all 0.1s;
+  color:black
+}
+
+#navbar-item:focus  {
+  color: black;
+ 
+}
+
+#navbar-item:active {
+  color: black;
+}
+
+.navbar button:focus-visible {
+  background-color: transparent;
+}
+
+.navbar-item {
+  color: white
+}
+
+.navbar-item img {
+  display: flex;
+  padding-top: 0px;
+  max-height: fit-content;
+  height: 50px
+}
+
+#navbar-title {
+  display: 'none';
+      text-align: center;
+      color: white;
+      max-height: fit-content;
+      background-color: $outdoorsgreen;
+      text-transform: uppercase;
+      letter-spacing: 12px;
+      font-weight: 100;
+        font-size: 24px;
+        font-family: rift-soft;
+      
+    } span {
+          color: black
+        }
+
+                #navbar-title:active {
+                  background-color: transparent;;
+                }
+                                 #navbar-title:focus {
+                                   background-color: transparent;;
+                                 }
+
+                                #navbar-item:focus  {
+  color: black;
+ 
+}
+
+#navbar-item:active {
+  color: black;
+}
+
+#navbar-image:active:focus{
+background-color: transparent;
+}
+
+// Title-hero
+.title-hero {
+  min-height: 7vh;
+  text-align: center;
+  color: white;
+  background-color: $outdoorsgreen;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  font-weight: 100;
+  font-size: 50px;
+  font-family: rift-soft;
+} 
+
+
+// Hero
+
+// to fix hero navbar section
+.tabs:not(:last-child),
+.pagination:not(:last-child),
+.message:not(:last-child),
+.level:not(:last-child),
+.breadcrumb:not(:last-child),
+.block:not(:last-child),
+.title:not(:last-child),
+.subtitle:not(:last-child),
+.table-container:not(:last-child),
+.table:not(:last-child),
+.progress:not(:last-child),
+.notification:not(:last-child),
+.content:not(:last-child),
+.box:not(:last-child) {
+  margin-bottom: 0rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 92vh;
+}
+
+.hero.is-success .title {
+  color: black
+}
+
+.hero-background {
+  background-image: url(../assets/images/demo3.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: -70px;
+  z-index: -2;
+}
+
+
+// .columns .button {
+//   // margin-top: 80px;
+//   margin-bottom: 20vh;
+//   height: 6vw;
+//   width: 25vw ;
+//   padding: 40px;
+//   font-size: 25px;
+//   // border: 2px solid darkgreen;
+// }
+
+.columns .button {
+  margin-top: 70vh;
+  margin-bottom: 20vh;
+  height: 6vw;
+  width: 25vw;
+  padding: 40px;
+  font-size: 25px;
+ 
+  bottom: 10px;
+  // border: 2px solid darkgreen;
+}
+
+#has-text-over-photo {
+  color: #6c8249;
+  
+}
+
+.hero-text-over-photo {
+position: absolute;
+ top: 18%;
+left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  color: black
+}
+// About
+
+
+.title {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: $outdoorsgreen;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+#read-more {
+  color: rgb(74, 74, 74);
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+#read-more:hover {
+  transition: all 0.1s;
+  color: grey;
+}
+
+#mediator-card {
+  min-height: 83vh;
+  
+}
+
+// #mediator-card:hover {
+//   box-shadow: 0 0 20px 1px grey;
+//   transition: all .1s ease-in-out;
+
+// } 
+
+#about-image {
+  border-radius: 0.25rem;
+ 
+}
+
+// Mediator
+
+#mediator-contact-info {
+  text-decoration: none;
+font-size: 1.1rem;
+}
+
+
+
+#mediator-contact-info:hover {
+  color: #0000EE (blue)
+}
+
+.mediator-text {
+  font-size:1.25rem ;
+  color: black
+}
+
+#mediator-image {
+  margin-top: 15px;
+  margin-left: 10px;
+  // background-color: $outdoorsgreen;
+  
+}
+
+.mediator-image {
+  
+  border-radius: 0.25rem;
+}
+
+.mediator-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 140px;
+    width: 100%;
+  
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 0 10;
+      padding: 0 10px 0 10px
+    }
+  
+}
+
+// Footer
+
+.footer {
+  color: white;
+  min-height: 8vh;
+  background-color: $outdoorsgreen;  
+} 
+
+.footer-group {
+  a {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-image-1 {
+  height: 100px;
+  width: 100%;
+  max-width: 640px;
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.copyright {
+  padding-top: 1rem;
+  span {
+    color: #808591;
+    font-size: 0.9rem;
+  }
+}
+
+// 
+
+
+// FAQ's
+
+#faq-card {
+  height: 35vh;
+  
+}
+
+#faq-card button {
+  height: 25vh;
+  
+}
+
+#faq-title {
+  overflow: hidden;
+    white-space: nowrap;
+}
+
+#youtube-div {
+  height: 20vh;
+  width: auto
+
+}
+
+.faq-button {
+  font-size: 22px;
+  padding-left: 6px;
+  padding-top: 3px;
+  border: none;
+  background: none;
+}
+
+.faq-button :hover {
+  cursor: pointer;
+  transition: all 0.1s;
+  color: grey;
+}
+
+.faq-button-subtitle {
+  color: grey;
+  font-size: smaller;
+}
+
+// Useful Links
+
+#links-text {
+  font-size: 1.25rem;
+  color: black
+}
+// Animations
+
+.fadeInOnLoad {
+  animation: fadeIn 1.2s ease backwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
+
+.fadeInOnLoad2 {
+  animation: fadeIn2 2s ease backwards;
+  animation-delay: .8s;
+}
+
+@keyframes fadeIn2 {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0);
+    opacity: 1;
+  }
+}
