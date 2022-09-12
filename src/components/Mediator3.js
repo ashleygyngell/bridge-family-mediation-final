@@ -27,7 +27,7 @@ const Mediator3 = () => {
                     {' '}
                     <span id="mediator-contact-info"> 07880 724658</span>
                   </a>
-
+                  <br />
                   <a
                     id="fontawesome-styling"
                     className="subtitle "

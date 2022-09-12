@@ -122,6 +122,7 @@ background-position: center center;
 
 .navbar-menu {
   background-color: $outdoorsgreen;
+  color: blue;
 }
 
 .navbar-menu :hover {
@@ -130,29 +131,32 @@ background-position: center center;
 }
 
 .navbar-brand:focus {
-  background: black
+  background-color: transparent;;
 }
 
 .navbar-brand:active {
-  background: $outdoorsgreen;;
+  background-color: transparent;;
 }
 
 #navbar-item:hover {
   transition: all 0.1s;
-  color:black
+  color:black;
+  background-color: $outdoorsgreen;
 }
 
 #navbar-item:focus  {
   color: black;
+  background-color: $outdoorsgreen;
  
 }
 
 #navbar-item:active {
   color: black;
+  background-color: $outdoorsgreen;
 }
 
 .navbar button:focus-visible {
-  background: transparent;
+  background-color: transparent;
 }
 
 .navbar-item {
@@ -163,7 +167,8 @@ background-position: center center;
   display: flex;
   padding-top: 0px;
   max-height: fit-content;
-  height: 50px
+  height: 50px;
+  background-color: $outdoorsgreen
 }
 
 #navbar-title {
@@ -182,19 +187,26 @@ background-position: center center;
           color: black
         }
 
-               
+                #navbar-title:active {
+                  background-color: $outdoorsgreen;;
+                }
+                                 #navbar-title:focus {
+                                   background-color: $outdoorsgreen;;
+                                 }
 
+                                #navbar-item:focus  {
+  color: black;
+  background-color: $outdoorsgreen;
+ 
+}
 
 #navbar-item:active {
   color: black;
+  background-color: outdoorsgreen;
 }
 
 #navbar-image:active:focus{
-background: transparent;
-}
-
-.navbar :focus {
-  background: $outdoorsgreen;
+background-color: $outdoorsgreen;
 }
 
 // Title-hero
@@ -247,17 +259,31 @@ background: transparent;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative
+  position: relative;
+  margin-top: -70px;
+  z-index: -2;
 }
 
 
+// .columns .button {
+//   // margin-top: 80px;
+//   margin-bottom: 20vh;
+//   height: 6vw;
+//   width: 25vw ;
+//   padding: 40px;
+//   font-size: 25px;
+//   // border: 2px solid darkgreen;
+// }
+
 .columns .button {
-  margin-top: 65vh;
+  margin-top: 70vh;
   margin-bottom: 20vh;
   height: 6vw;
-  width: 25vw ;
+  width: 25vw;
   padding: 40px;
   font-size: 25px;
+ 
+  bottom: 10px;
   // border: 2px solid darkgreen;
 }
 
@@ -268,7 +294,7 @@ background: transparent;
 
 .hero-text-over-photo {
 position: absolute;
- top: 14%;
+ top: 18%;
 left: 0;
   right: 0;
   margin-left: auto;
@@ -306,7 +332,7 @@ left: 0;
 
 #mediator-card {
   min-height: 83vh;
-  margin-top: -1rem;
+  
 }
 
 // #mediator-card:hover {
@@ -409,7 +435,7 @@ font-size: 1.1rem;
 // FAQ's
 
 #faq-card {
-  min-height: 280px;
+  height: 35vh;
   
 }
 
@@ -425,7 +451,7 @@ font-size: 1.1rem;
 
 #youtube-div {
   height: 20vh;
-  width: auto;
+  width: auto
 
 }
 

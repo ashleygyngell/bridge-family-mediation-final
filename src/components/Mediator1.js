@@ -14,7 +14,7 @@ const Mediator1 = () => {
       </button>
       <div className="content  ">
         <body className="">
-          <div className="columns pt-6 ">
+          <div className="columns pt-5 ">
             <div className="column is-4  has-text-centered   ">
               <img
                 src="https://www.hagopsphotography.com/wp-content/uploads/2021/10/Female-LinkedIn-portrait.jpg"
@@ -27,6 +27,7 @@ const Mediator1 = () => {
                     {' '}
                     <span id="mediator-contact-info">07930 366661</span>
                   </a>
+                  <br />
 
                   <a
                     id="fontawesome-styling"

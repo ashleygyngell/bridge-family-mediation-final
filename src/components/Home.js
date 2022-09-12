@@ -1,13 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Carousel } from 'react-responsive-carousel';
+import { useEffect } from 'react';
+// import { Carousel } from 'react-responsive-carousel';
 
-import test1 from '../assets/images/test1.png';
-import test2 from '../assets/images/test2.png';
-import test3 from '../assets/images/test3.png';
+// import test1 from '../assets/images/test1.png';
+// import test2 from '../assets/images/test2.png';
+// import test3 from '../assets/images/test3.png';
 
 // Homepage needs new photo background and liscenced.
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <section className="title-hero">

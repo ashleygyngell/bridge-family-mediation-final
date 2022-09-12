@@ -1,11 +1,15 @@
 import React from 'react';
+import { useEffect } from 'react';
 // Doesnt need postcode as the text simply needs to be email, telephone number, and content
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <body className="pt-6 pr-6 pl-6">
+      <body className=" mt-1">
         <div className="content ">
-          <p className="title is-1 is-1">Contact Us</p>
+          <p className="title is-2">Contact Us</p>
           <form
             action="mailto:admin@bridgefamilymediation.co.uk"
             method="post"

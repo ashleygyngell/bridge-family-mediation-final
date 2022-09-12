@@ -37,14 +37,13 @@ const Navbar = () => {
     <nav className="navbar is-transparent level ">
       <div className="navbar-brand ">
         <Link to={'/'} className="navbar-item level-item">
-          <span id="navbar-image">
-            <img
-              src={bfmLogo2}
-              alt="Bridge Family Mediation Logo"
-              width="auto"
-            />
-          </span>
-          <span className=""> </span>
+          <img
+            id="navbar-image"
+            src={bfmLogo2}
+            alt="Bridge Family Mediation Logo"
+            width="auto"
+          />
+
           <Link to={'/'}>
             <p id="navbar-title" className="navbar-title level-item pl-2">
               <span>Bridge</span> Family Mediation

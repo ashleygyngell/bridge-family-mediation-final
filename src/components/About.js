@@ -1,15 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const About = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
+      {/* <button className="back-button pl-4 pt-1 " onClick={() => navigate(-1)}>
+        <span>
+          <i className="fa-solid fa-arrow-left "></i> Back
+        </span>
+      </button> */}
       <body>
         <div className="content  ">
+          <p className="title is-2 mt-1 ">About us</p>
           <div className="columns ">
             {/* Mediator 1 */}
             <div className="column ">
-              <div id="mediator-card" className="card pt-2">
+              <div id="mediator-card" className="card pt-2 ">
                 <div className="card-image pt-5 ">
                   <Link to={'/katebrown'}>
                     <figure className="image is-2by2 ">

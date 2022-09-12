@@ -1,7 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const UsefulLinks = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   return (
     <>
@@ -10,9 +14,10 @@ const UsefulLinks = () => {
           <i className="fa-solid fa-arrow-left "></i> Back
         </span>
       </button>
-      <body id="links-text">
-        <div className="content  pt-2 ">
-          <div className=" pt-5">
+      <body>
+        <div className="content  ">
+          <p className="title is-2 mt-1 ">Useful Links</p>
+          <div id="links-text" className="">
             <p className="">
               <strong>DIVORCE STEP BY STEP </strong>
               <br /> Government website:{' '}

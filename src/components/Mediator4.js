@@ -27,7 +27,7 @@ const Mediator4 = () => {
                     {' '}
                     <span id="mediator-contact-info">00000 00000</span>
                   </a>
-
+                  <br />
                   <a
                     id="fontawesome-styling"
                     className="subtitle "
